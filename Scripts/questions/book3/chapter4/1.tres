@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/questions/question.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/questions/book3/chapter4/images/quest1.png" type="Texture" id=2]
+
+[resource]
+script = ExtResource( 1 )
+question = "Name three chores you do a home."
+answer = "Three chores."
+points = 3
+image_hint = ExtResource( 2 )

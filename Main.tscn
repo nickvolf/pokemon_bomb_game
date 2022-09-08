@@ -1,0 +1,1405 @@
+[gd_scene load_steps=121 format=2]
+
+[ext_resource path="res://images/pokemon_background.png" type="Texture" id=1]
+[ext_resource path="res://images/pokemon_choicebutton.png" type="Texture" id=2]
+[ext_resource path="res://pokemon_theme.tres" type="Theme" id=3]
+[ext_resource path="res://fonts/Pokemon Solid.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://images/pokemon_panel.png" type="Texture" id=5]
+[ext_resource path="res://fonts/Pokemon Classic.ttf" type="DynamicFontData" id=6]
+[ext_resource path="res://Scripts/selection_screen.gd" type="Script" id=7]
+[ext_resource path="res://Scripts/ButtonContainer.gd" type="Script" id=8]
+[ext_resource path="res://Scripts/questions/book1/story1-1.tres" type="Resource" id=9]
+[ext_resource path="res://Scripts/SetUpScreen.gd" type="Script" id=10]
+[ext_resource path="res://Scripts/TestResources.gd" type="Script" id=11]
+[ext_resource path="res://Scripts/questions/book2/story2-5.tres" type="Resource" id=12]
+[ext_resource path="res://Scripts/questions/book2/story2-9.tres" type="Resource" id=13]
+[ext_resource path="res://Scripts/questions/book2/story2-6.tres" type="Resource" id=14]
+[ext_resource path="res://Scripts/questions/book2/story2-8.tres" type="Resource" id=15]
+[ext_resource path="res://Scripts/questions/book2/story2-7.tres" type="Resource" id=16]
+[ext_resource path="res://Scripts/questions/book2/story2-4.tres" type="Resource" id=17]
+[ext_resource path="res://Scripts/questions/book3/story3-9.tres" type="Resource" id=18]
+[ext_resource path="res://Scripts/questions/book5/story5-8.tres" type="Resource" id=19]
+[ext_resource path="res://Scripts/questions/book4/story4-1.tres" type="Resource" id=20]
+[ext_resource path="res://Scripts/questions/book4/story4-6.tres" type="Resource" id=21]
+[ext_resource path="res://Scripts/questions/book5/story5-2.tres" type="Resource" id=22]
+[ext_resource path="res://Scripts/questions/book4/story4-4.tres" type="Resource" id=23]
+[ext_resource path="res://Scripts/questions/book4/story4-8.tres" type="Resource" id=24]
+[ext_resource path="res://Scripts/questions/book4/story4-9.tres" type="Resource" id=25]
+[ext_resource path="res://Scripts/questions/book5/story5-4.tres" type="Resource" id=26]
+[ext_resource path="res://Scripts/questions/book4/story4-5.tres" type="Resource" id=27]
+[ext_resource path="res://Scripts/questions/book4/story4-2.tres" type="Resource" id=28]
+[ext_resource path="res://Scripts/questions/book5/story5-6.tres" type="Resource" id=29]
+[ext_resource path="res://Scripts/questions/book5/story5-7.tres" type="Resource" id=30]
+[ext_resource path="res://Scripts/questions/book5/story5-3.tres" type="Resource" id=31]
+[ext_resource path="res://Scripts/questions/book4/story4-7.tres" type="Resource" id=32]
+[ext_resource path="res://Scripts/questions/book5/story5-1.tres" type="Resource" id=33]
+[ext_resource path="res://Scripts/questions/book5/story5-5.tres" type="Resource" id=34]
+[ext_resource path="res://Scripts/questions/book5/story5-9.tres" type="Resource" id=35]
+[ext_resource path="res://Scripts/questions/book4/story4-3.tres" type="Resource" id=36]
+[ext_resource path="res://Scripts/questions/book3/story3-1.tres" type="Resource" id=37]
+[ext_resource path="res://Scripts/questions/book3/story3-2.tres" type="Resource" id=38]
+[ext_resource path="res://Scripts/questions/book3/story3-4.tres" type="Resource" id=39]
+[ext_resource path="res://Scripts/questions/book2/story2-3.tres" type="Resource" id=40]
+[ext_resource path="res://Scripts/questions/book3/story3-3.tres" type="Resource" id=41]
+[ext_resource path="res://Scripts/questions/book3/story3-5.tres" type="Resource" id=42]
+[ext_resource path="res://Scripts/questions/book3/story3-7.tres" type="Resource" id=43]
+[ext_resource path="res://Scripts/questions/book3/story3-8.tres" type="Resource" id=44]
+[ext_resource path="res://Scripts/questions/book3/story3-6.tres" type="Resource" id=45]
+[ext_resource path="res://Scripts/questions/book1/story1-7.tres" type="Resource" id=46]
+[ext_resource path="res://Scripts/questions/book6/story6-3.tres" type="Resource" id=47]
+[ext_resource path="res://Scripts/questions/book6/story6-4.tres" type="Resource" id=48]
+[ext_resource path="res://Scripts/questions/book6/story6-9.tres" type="Resource" id=49]
+[ext_resource path="res://Scripts/questions/book6/story6-6.tres" type="Resource" id=50]
+[ext_resource path="res://Scripts/questions/book1/story1-9.tres" type="Resource" id=51]
+[ext_resource path="res://Scripts/questions/book2/story2-1.tres" type="Resource" id=52]
+[ext_resource path="res://Scripts/questions/book2/story2-2.tres" type="Resource" id=53]
+[ext_resource path="res://Scripts/questions/book6/story6-5.tres" type="Resource" id=54]
+[ext_resource path="res://Scripts/questions/book6/story6-2.tres" type="Resource" id=55]
+[ext_resource path="res://Scripts/questions/book1/story1-3.tres" type="Resource" id=56]
+[ext_resource path="res://Scripts/questions/book6/story6-7.tres" type="Resource" id=57]
+[ext_resource path="res://Scripts/questions/book6/story6-8.tres" type="Resource" id=58]
+[ext_resource path="res://Scripts/questions/book1/story1-6.tres" type="Resource" id=59]
+[ext_resource path="res://Scripts/questions/book6/story6-1.tres" type="Resource" id=60]
+[ext_resource path="res://Scripts/questions/book1/story1-2.tres" type="Resource" id=61]
+[ext_resource path="res://Scripts/questions/book1/story1-8.tres" type="Resource" id=62]
+[ext_resource path="res://Scripts/questions/book1/story1-4.tres" type="Resource" id=63]
+[ext_resource path="res://Scripts/questions/book1/story1-5.tres" type="Resource" id=64]
+[ext_resource path="res://images/pokemon_panel2.png" type="Texture" id=65]
+[ext_resource path="res://Scripts/pokemon/lucario.tres" type="Resource" id=66]
+[ext_resource path="res://Scripts/pokemon/absol.tres" type="Resource" id=67]
+[ext_resource path="res://Scripts/pokemon/blaziken.tres" type="Resource" id=68]
+[ext_resource path="res://Scripts/pokemon/ninetales.tres" type="Resource" id=69]
+[ext_resource path="res://Scripts/pokemon/arcanine.tres" type="Resource" id=70]
+[ext_resource path="res://Scripts/pokemon/umbreon.tres" type="Resource" id=71]
+[ext_resource path="res://Scripts/pokemon/eevee.tres" type="Resource" id=72]
+[ext_resource path="res://Scripts/pokemon/gardevoir.tres" type="Resource" id=73]
+[ext_resource path="res://Scripts/pokemon/garchomp.tres" type="Resource" id=74]
+[ext_resource path="res://Scripts/pokemon/blastoise.tres" type="Resource" id=75]
+[ext_resource path="res://Scripts/pokemon/squirtle.tres" type="Resource" id=76]
+[ext_resource path="res://Scripts/pokemon/dragonite.tres" type="Resource" id=77]
+[ext_resource path="res://Scripts/pokemon/mudkip.tres" type="Resource" id=78]
+[ext_resource path="res://Scripts/pokemon/charzard.tres" type="Resource" id=79]
+[ext_resource path="res://Scripts/pokemon/gengar.tres" type="Resource" id=80]
+[ext_resource path="res://Scripts/pokemon/bulbasaur.tres" type="Resource" id=81]
+[ext_resource path="res://Scripts/pokemon/infernape.tres" type="Resource" id=82]
+[ext_resource path="res://Scripts/pokemon/scizor.tres" type="Resource" id=83]
+[ext_resource path="res://Scripts/pokemon/luxray.tres" type="Resource" id=84]
+[ext_resource path="res://Scripts/pokemon/flygon.tres" type="Resource" id=85]
+[ext_resource path="res://Scripts/pokemon/torterra.tres" type="Resource" id=86]
+[ext_resource path="res://Scripts/pokemon/ampharos.tres" type="Resource" id=87]
+[ext_resource path="res://Scripts/pokemon/typhlosion.tres" type="Resource" id=88]
+[ext_resource path="res://Scripts/pokemon/snorlax.tres" type="Resource" id=89]
+[ext_resource path="res://Scripts/pokemon/tyranitar.tres" type="Resource" id=90]
+[ext_resource path="res://Scripts/pokemon/PokemonManager.gd" type="Script" id=91]
+[ext_resource path="res://images/pokemon/1.png" type="Texture" id=92]
+[ext_resource path="res://PointsReveal.gd" type="Script" id=93]
+[ext_resource path="res://sounds/116-victory (vs trainer).mp3" type="AudioStream" id=94]
+[ext_resource path="res://sounds/110-pokemon center.mp3" type="AudioStream" id=95]
+[ext_resource path="res://sounds/caterpie.mp3" type="AudioStream" id=96]
+[ext_resource path="res://sounds/115-battle (vs trainer).mp3" type="AudioStream" id=97]
+[ext_resource path="res://UI/ThreeBallsScreen.gd" type="Script" id=98]
+[ext_resource path="res://Scripts/pokemon/mew.tres" type="Resource" id=99]
+[ext_resource path="res://images/mewtwo.jpg" type="Texture" id=100]
+[ext_resource path="res://images/trainer_battle.png" type="Texture" id=101]
+[ext_resource path="res://images/maxresdefault.jpg" type="Texture" id=102]
+[ext_resource path="res://TimerBar.gd" type="Script" id=103]
+[ext_resource path="res://Scripts/mario/MarioManager.gd" type="Script" id=104]
+[ext_resource path="res://images/images/Black_White_Team_Plasma_Grunts.webp" type="Texture" id=105]
+
+[sub_resource type="CanvasItemMaterial" id=4]
+light_mode = 1
+
+[sub_resource type="DynamicFont" id=1]
+size = 26
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=13]
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=11]
+size = 64
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=12]
+size = 64
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=14]
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=15]
+size = 64
+font_data = ExtResource( 4 )
+
+[sub_resource type="Animation" id=5]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/path = NodePath(".:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "shake"
+loop = true
+tracks/0/type = "bezier"
+tracks/0/path = NodePath(".:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 15, -0.25, 0, 0.25, 0, -10, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.3, 0.6, 1 )
+}
+
+[sub_resource type="DynamicFont" id=7]
+size = 48
+outline_size = 2
+outline_color = Color( 0.52549, 0.52549, 0.52549, 1 )
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 64
+outline_size = 2
+outline_color = Color( 0.454902, 0.454902, 0.454902, 1 )
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 26
+outline_size = 1
+outline_color = Color( 0.564706, 0.564706, 0.564706, 1 )
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 26
+outline_size = 1
+use_filter = true
+font_data = ExtResource( 6 )
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 0.282353, 0.768627, 0, 1 )
+
+[sub_resource type="DynamicFont" id=9]
+size = 64
+outline_size = 1
+font_data = ExtResource( 4 )
+
+[node name="SelectionScene" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource( 7 )
+mew = ExtResource( 99 )
+current_test = ExtResource( 42 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource( 1 )
+expand = true
+stretch_mode = 7
+
+[node name="ButtonContainer" type="CenterContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 8 )
+
+[node name="GridContainer" type="GridContainer" parent="ButtonContainer"]
+margin_left = 42.0
+margin_top = 29.0
+margin_right = 1238.0
+margin_bottom = 691.0
+custom_constants/vseparation = 50
+custom_constants/hseparation = 50
+columns = 7
+
+[node name="A" type="CenterContainer" parent="ButtonContainer/GridContainer"]
+material = SubResource( 4 )
+margin_right = 128.0
+margin_bottom = 128.0
+
+[node name="TextureButtonA" type="TextureButton" parent="ButtonContainer/GridContainer/A"]
+margin_right = 128.0
+margin_bottom = 128.0
+texture_normal = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="ButtonContainer/GridContainer/A"]
+margin_left = 43.0
+margin_top = 10.0
+margin_right = 85.0
+margin_bottom = 118.0
+theme = ExtResource( 3 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "A"
+
+[node name="B" type="CenterContainer" parent="ButtonContainer/GridContainer"]
+margin_left = 178.0
+margin_right = 306.0
+margin_bottom = 128.0
+
+[node name="TextureButtonB" type="TextureButton" parent="ButtonContainer/GridContainer/B"]
+margin_right = 128.0
+margin_bottom = 128.0
+texture_normal = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="ButtonContainer/GridContainer/B"]
+margin_left = 41.0
+margin_top = 10.0
+margin_right = 87.0
+margin_bottom = 118.0
+theme = ExtResource( 3 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "B"
+
+[node name="C" type="CenterContainer" parent="ButtonContainer/GridContainer"]
+margin_left = 356.0
+margin_right = 484.0
+margin_bottom = 128.0
+
+[node name="TextureButtonC" type="TextureButton" parent="ButtonContainer/GridContainer/C"]
+margin_right = 128.0
+margin_bottom = 128.0
+texture_normal = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="ButtonContainer/GridContainer/C"]
+margin_left = 41.0
+margin_top = 10.0
+margin_right = 87.0
+margin_bottom = 118.0
+theme = ExtResource( 3 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "C"
+
+[node name="D" type="CenterContainer" parent="ButtonContainer/GridContainer"]
+margin_left = 534.0
+margin_right = 662.0
+margin_bottom = 128.0
+
+[node name="TextureButtonD" type="TextureButton" parent="ButtonContainer/GridContainer/D"]
+margin_right = 128.0
+margin_bottom = 128.0
+texture_normal = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="ButtonContainer/GridContainer/D"]
+margin_left = 39.0
+margin_top = 10.0
+margin_right = 89.0
+margin_bottom = 118.0
+theme = ExtResource( 3 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "D"
+
+[node name="E" type="CenterContainer" parent="ButtonContainer/GridContainer"]
+margin_left = 712.0
+margin_right = 840.0
+margin_bottom = 128.0
+
+[node name="TextureButtonE" type="TextureButton" parent="ButtonContainer/GridContainer/E"]
+margin_right = 128.0
+margin_bottom = 128.0
+texture_normal = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="ButtonContainer/GridContainer/E"]
+margin_left = 43.0
+margin_top = 10.0
+margin_right = 85.0
+margin_bottom = 118.0
+theme = ExtResource( 3 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "E"
+
+[node name="F" type="CenterContainer" parent="ButtonContainer/GridContainer"]
+margin_left = 890.0
+margin_right = 1018.0
+margin_bottom = 128.0
+
+[node name="TextureButtonF" type="TextureButton" parent="ButtonContainer/GridContainer/F"]
+margin_right = 128.0
+margin_bottom = 128.0
+texture_normal = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="ButtonContainer/GridContainer/F"]
+margin_left = 43.0
+margin_top = 10.0
+margin_right = 85.0
+margin_bottom = 118.0
+theme = ExtResource( 3 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "F"
+
+[node name="G" type="CenterContainer" parent="ButtonContainer/GridContainer"]
+margin_left = 1068.0
+margin_right = 1196.0
+margin_bottom = 128.0
+
+[node name="TextureButtonG" type="TextureButton" parent="ButtonContainer/GridContainer/G"]
+margin_right = 128.0
+margin_bottom = 128.0
+texture_normal = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="ButtonContainer/GridContainer/G"]
+margin_left = 41.0
+margin_top = 10.0
+margin_right = 87.0
+margin_bottom = 118.0
+theme = ExtResource( 3 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "G"
+
+[node name="H" type="CenterContainer" parent="ButtonContainer/GridContainer"]
+margin_top = 178.0
+margin_right = 128.0
+margin_bottom = 306.0
+
+[node name="TextureButtonH" type="TextureButton" parent="ButtonContainer/GridContainer/H"]
+margin_right = 128.0
+margin_bottom = 128.0
+texture_normal = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="ButtonContainer/GridContainer/H"]
+margin_left = 43.0
+margin_top = 10.0
+margin_right = 85.0
+margin_bottom = 118.0
+theme = ExtResource( 3 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "H"
+
+[node name="I" type="CenterContainer" parent="ButtonContainer/GridContainer"]
+margin_left = 178.0
+margin_top = 178.0
+margin_right = 306.0
+margin_bottom = 306.0
+
+[node name="TextureButtonI" type="TextureButton" parent="ButtonContainer/GridContainer/I"]
+margin_right = 128.0
+margin_bottom = 128.0
+texture_normal = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="ButtonContainer/GridContainer/I"]
+margin_left = 43.0
+margin_top = 10.0
+margin_right = 85.0
+margin_bottom = 118.0
+theme = ExtResource( 3 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "I"
+
+[node name="J" type="CenterContainer" parent="ButtonContainer/GridContainer"]
+margin_left = 356.0
+margin_top = 178.0
+margin_right = 484.0
+margin_bottom = 306.0
+
+[node name="TextureButtonJ" type="TextureButton" parent="ButtonContainer/GridContainer/J"]
+margin_right = 128.0
+margin_bottom = 128.0
+texture_normal = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="ButtonContainer/GridContainer/J"]
+margin_left = 38.0
+margin_top = 10.0
+margin_right = 89.0
+margin_bottom = 118.0
+theme = ExtResource( 3 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "J"
+
+[node name="K" type="CenterContainer" parent="ButtonContainer/GridContainer"]
+margin_left = 534.0
+margin_top = 178.0
+margin_right = 662.0
+margin_bottom = 306.0
+
+[node name="TextureButtonK" type="TextureButton" parent="ButtonContainer/GridContainer/K"]
+margin_right = 128.0
+margin_bottom = 128.0
+texture_normal = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="ButtonContainer/GridContainer/K"]
+margin_left = 43.0
+margin_top = 10.0
+margin_right = 85.0
+margin_bottom = 118.0
+theme = ExtResource( 3 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "K"
+
+[node name="L" type="CenterContainer" parent="ButtonContainer/GridContainer"]
+margin_left = 712.0
+margin_top = 178.0
+margin_right = 840.0
+margin_bottom = 306.0
+
+[node name="TextureButtonL" type="TextureButton" parent="ButtonContainer/GridContainer/L"]
+margin_right = 128.0
+margin_bottom = 128.0
+texture_normal = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="ButtonContainer/GridContainer/L"]
+margin_left = 43.0
+margin_top = 10.0
+margin_right = 85.0
+margin_bottom = 118.0
+theme = ExtResource( 3 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "L"
+
+[node name="M" type="CenterContainer" parent="ButtonContainer/GridContainer"]
+margin_left = 890.0
+margin_top = 178.0
+margin_right = 1018.0
+margin_bottom = 306.0
+
+[node name="TextureButtonM" type="TextureButton" parent="ButtonContainer/GridContainer/M"]
+margin_right = 128.0
+margin_bottom = 128.0
+texture_normal = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="ButtonContainer/GridContainer/M"]
+margin_left = 37.0
+margin_top = 10.0
+margin_right = 91.0
+margin_bottom = 118.0
+theme = ExtResource( 3 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "M"
+
+[node name="N" type="CenterContainer" parent="ButtonContainer/GridContainer"]
+margin_left = 1068.0
+margin_top = 178.0
+margin_right = 1196.0
+margin_bottom = 306.0
+
+[node name="TextureButtonN" type="TextureButton" parent="ButtonContainer/GridContainer/N"]
+margin_right = 128.0
+margin_bottom = 128.0
+texture_normal = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="ButtonContainer/GridContainer/N"]
+margin_left = 43.0
+margin_top = 10.0
+margin_right = 85.0
+margin_bottom = 118.0
+theme = ExtResource( 3 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "N"
+
+[node name="O" type="CenterContainer" parent="ButtonContainer/GridContainer"]
+margin_top = 356.0
+margin_right = 128.0
+margin_bottom = 484.0
+
+[node name="TextureButtonO" type="TextureButton" parent="ButtonContainer/GridContainer/O"]
+margin_right = 128.0
+margin_bottom = 128.0
+texture_normal = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="ButtonContainer/GridContainer/O"]
+margin_left = 35.0
+margin_top = 10.0
+margin_right = 93.0
+margin_bottom = 118.0
+theme = ExtResource( 3 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "O"
+
+[node name="P" type="CenterContainer" parent="ButtonContainer/GridContainer"]
+margin_left = 178.0
+margin_top = 356.0
+margin_right = 306.0
+margin_bottom = 484.0
+
+[node name="TextureButtonP" type="TextureButton" parent="ButtonContainer/GridContainer/P"]
+margin_right = 128.0
+margin_bottom = 128.0
+texture_normal = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="ButtonContainer/GridContainer/P"]
+margin_left = 42.0
+margin_top = 10.0
+margin_right = 85.0
+margin_bottom = 118.0
+theme = ExtResource( 3 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "P"
+
+[node name="Q" type="CenterContainer" parent="ButtonContainer/GridContainer"]
+margin_left = 356.0
+margin_top = 356.0
+margin_right = 484.0
+margin_bottom = 484.0
+
+[node name="TextureButtonQ" type="TextureButton" parent="ButtonContainer/GridContainer/Q"]
+margin_right = 128.0
+margin_bottom = 128.0
+texture_normal = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="ButtonContainer/GridContainer/Q"]
+margin_left = 44.0
+margin_top = 10.0
+margin_right = 83.0
+margin_bottom = 118.0
+theme = ExtResource( 3 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Q"
+
+[node name="R" type="CenterContainer" parent="ButtonContainer/GridContainer"]
+margin_left = 534.0
+margin_top = 356.0
+margin_right = 662.0
+margin_bottom = 484.0
+
+[node name="TextureButtonR" type="TextureButton" parent="ButtonContainer/GridContainer/R"]
+margin_right = 128.0
+margin_bottom = 128.0
+texture_normal = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="ButtonContainer/GridContainer/R"]
+margin_left = 40.0
+margin_top = 10.0
+margin_right = 87.0
+margin_bottom = 118.0
+theme = ExtResource( 3 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "R"
+
+[node name="S" type="CenterContainer" parent="ButtonContainer/GridContainer"]
+margin_left = 712.0
+margin_top = 356.0
+margin_right = 840.0
+margin_bottom = 484.0
+
+[node name="TextureButtonS" type="TextureButton" parent="ButtonContainer/GridContainer/S"]
+margin_right = 128.0
+margin_bottom = 128.0
+texture_normal = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="ButtonContainer/GridContainer/S"]
+margin_left = 43.0
+margin_top = 10.0
+margin_right = 85.0
+margin_bottom = 118.0
+theme = ExtResource( 3 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "S"
+
+[node name="T" type="CenterContainer" parent="ButtonContainer/GridContainer"]
+margin_left = 890.0
+margin_top = 356.0
+margin_right = 1018.0
+margin_bottom = 484.0
+
+[node name="TextureButtonT" type="TextureButton" parent="ButtonContainer/GridContainer/T"]
+margin_right = 128.0
+margin_bottom = 128.0
+texture_normal = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="ButtonContainer/GridContainer/T"]
+margin_left = 42.0
+margin_top = 10.0
+margin_right = 85.0
+margin_bottom = 118.0
+theme = ExtResource( 3 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "T"
+
+[node name="U" type="CenterContainer" parent="ButtonContainer/GridContainer"]
+margin_left = 1068.0
+margin_top = 356.0
+margin_right = 1196.0
+margin_bottom = 484.0
+
+[node name="TextureButtonU" type="TextureButton" parent="ButtonContainer/GridContainer/U"]
+margin_right = 128.0
+margin_bottom = 128.0
+texture_normal = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="ButtonContainer/GridContainer/U"]
+margin_left = 39.0
+margin_top = 10.0
+margin_right = 89.0
+margin_bottom = 118.0
+theme = ExtResource( 3 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "U"
+
+[node name="V" type="CenterContainer" parent="ButtonContainer/GridContainer"]
+margin_top = 534.0
+margin_right = 128.0
+margin_bottom = 662.0
+
+[node name="TextureButtonV" type="TextureButton" parent="ButtonContainer/GridContainer/V"]
+margin_right = 128.0
+margin_bottom = 128.0
+texture_normal = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="ButtonContainer/GridContainer/V"]
+margin_left = 37.0
+margin_top = 10.0
+margin_right = 91.0
+margin_bottom = 118.0
+theme = ExtResource( 3 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "V"
+
+[node name="W" type="CenterContainer" parent="ButtonContainer/GridContainer"]
+margin_left = 178.0
+margin_top = 534.0
+margin_right = 306.0
+margin_bottom = 662.0
+
+[node name="TextureButtonW" type="TextureButton" parent="ButtonContainer/GridContainer/W"]
+margin_right = 128.0
+margin_bottom = 128.0
+texture_normal = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="ButtonContainer/GridContainer/W"]
+margin_left = 37.0
+margin_top = 10.0
+margin_right = 91.0
+margin_bottom = 118.0
+theme = ExtResource( 3 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "W"
+
+[node name="X" type="CenterContainer" parent="ButtonContainer/GridContainer"]
+margin_left = 356.0
+margin_top = 534.0
+margin_right = 484.0
+margin_bottom = 662.0
+
+[node name="TextureButtonX" type="TextureButton" parent="ButtonContainer/GridContainer/X"]
+margin_right = 128.0
+margin_bottom = 128.0
+texture_normal = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="ButtonContainer/GridContainer/X"]
+margin_left = 37.0
+margin_top = 10.0
+margin_right = 91.0
+margin_bottom = 118.0
+theme = ExtResource( 3 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "X"
+
+[node name="Y" type="CenterContainer" parent="ButtonContainer/GridContainer"]
+margin_left = 534.0
+margin_top = 534.0
+margin_right = 662.0
+margin_bottom = 662.0
+
+[node name="TextureButtonY" type="TextureButton" parent="ButtonContainer/GridContainer/Y"]
+margin_right = 128.0
+margin_bottom = 128.0
+texture_normal = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="ButtonContainer/GridContainer/Y"]
+margin_left = 37.0
+margin_top = 10.0
+margin_right = 91.0
+margin_bottom = 118.0
+theme = ExtResource( 3 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Y"
+
+[node name="Z" type="CenterContainer" parent="ButtonContainer/GridContainer"]
+margin_left = 712.0
+margin_top = 534.0
+margin_right = 840.0
+margin_bottom = 662.0
+
+[node name="TextureButtonZ" type="TextureButton" parent="ButtonContainer/GridContainer/Z"]
+margin_right = 128.0
+margin_bottom = 128.0
+texture_normal = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="ButtonContainer/GridContainer/Z"]
+margin_left = 37.0
+margin_top = 10.0
+margin_right = 91.0
+margin_bottom = 118.0
+theme = ExtResource( 3 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Z"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+visible = false
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -370.0
+margin_top = -188.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+margin_right = 183.0
+margin_bottom = 188.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TeamName" type="Label" parent="HBoxContainer/VBoxContainer"]
+margin_right = 183.0
+margin_bottom = 37.0
+size_flags_horizontal = 3
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 1 )
+text = "Team One"
+align = 1
+
+[node name="Score" type="Label" parent="HBoxContainer/VBoxContainer"]
+margin_top = 41.0
+margin_right = 183.0
+margin_bottom = 188.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 1 )
+text = "6"
+align = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer"]
+margin_left = 187.0
+margin_right = 370.0
+margin_bottom = 188.0
+size_flags_horizontal = 3
+
+[node name="TeamName" type="Label" parent="HBoxContainer/VBoxContainer2"]
+margin_right = 183.0
+margin_bottom = 37.0
+size_flags_horizontal = 3
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 1 )
+text = "Team One"
+align = 1
+
+[node name="Score" type="Label" parent="HBoxContainer/VBoxContainer2"]
+margin_top = 41.0
+margin_right = 183.0
+margin_bottom = 188.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 1 )
+text = "9"
+align = 1
+
+[node name="Points" type="Control" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -377.0
+margin_top = -189.0
+margin_right = -17.0
+margin_bottom = -19.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Points"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Team1" type="VBoxContainer" parent="Points/HBoxContainer"]
+margin_right = 144.0
+margin_bottom = 170.0
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Points/HBoxContainer/Team1"]
+margin_right = 144.0
+margin_bottom = 26.0
+custom_fonts/font = SubResource( 13 )
+text = "Ella's Team"
+align = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Points/HBoxContainer/Team1"]
+margin_top = 30.0
+margin_right = 144.0
+margin_bottom = 50.0
+size_flags_horizontal = 3
+
+[node name="Team1Points" type="Button" parent="Points/HBoxContainer/Team1/HBoxContainer"]
+margin_right = 70.0
+margin_bottom = 20.0
+size_flags_horizontal = 3
+size_flags_vertical = 4
+text = "+"
+
+[node name="Team1PointsMinus" type="Button" parent="Points/HBoxContainer/Team1/HBoxContainer"]
+margin_left = 74.0
+margin_right = 144.0
+margin_bottom = 20.0
+size_flags_horizontal = 3
+size_flags_vertical = 4
+text = "-"
+
+[node name="Score" type="Label" parent="Points/HBoxContainer/Team1"]
+unique_name_in_owner = true
+margin_top = 54.0
+margin_right = 144.0
+margin_bottom = 144.0
+custom_fonts/font = SubResource( 11 )
+text = "0"
+align = 1
+valign = 1
+
+[node name="Team2" type="VBoxContainer" parent="Points/HBoxContainer"]
+margin_left = 148.0
+margin_right = 300.0
+margin_bottom = 170.0
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Points/HBoxContainer/Team2"]
+margin_right = 152.0
+margin_bottom = 26.0
+custom_fonts/font = SubResource( 13 )
+text = "Erin's Team"
+align = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Points/HBoxContainer/Team2"]
+margin_top = 30.0
+margin_right = 152.0
+margin_bottom = 50.0
+size_flags_horizontal = 3
+
+[node name="Team2Points" type="Button" parent="Points/HBoxContainer/Team2/HBoxContainer"]
+margin_right = 74.0
+margin_bottom = 20.0
+size_flags_horizontal = 3
+text = "+"
+
+[node name="Team2Points2Minus" type="Button" parent="Points/HBoxContainer/Team2/HBoxContainer"]
+margin_left = 78.0
+margin_right = 152.0
+margin_bottom = 20.0
+size_flags_horizontal = 3
+text = "-"
+
+[node name="Score" type="Label" parent="Points/HBoxContainer/Team2"]
+margin_top = 54.0
+margin_right = 152.0
+margin_bottom = 144.0
+custom_fonts/font = SubResource( 12 )
+text = "0"
+align = 1
+valign = 1
+
+[node name="Team3" type="VBoxContainer" parent="Points/HBoxContainer"]
+margin_left = 304.0
+margin_right = 368.0
+margin_bottom = 170.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="Points/HBoxContainer/Team3"]
+margin_right = 64.0
+margin_bottom = 26.0
+custom_fonts/font = SubResource( 14 )
+text = "Pete"
+align = 1
+valign = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Points/HBoxContainer/Team3"]
+margin_top = 30.0
+margin_right = 64.0
+margin_bottom = 50.0
+size_flags_horizontal = 3
+size_flags_vertical = 4
+
+[node name="Team3Points" type="Button" parent="Points/HBoxContainer/Team3/HBoxContainer"]
+margin_right = 30.0
+margin_bottom = 20.0
+size_flags_horizontal = 3
+text = "+"
+
+[node name="Team3PointsMinus" type="Button" parent="Points/HBoxContainer/Team3/HBoxContainer"]
+margin_left = 34.0
+margin_right = 64.0
+margin_bottom = 20.0
+size_flags_horizontal = 3
+text = "-"
+
+[node name="Score" type="Label" parent="Points/HBoxContainer/Team3"]
+margin_top = 54.0
+margin_right = 64.0
+margin_bottom = 170.0
+size_flags_vertical = 7
+custom_fonts/font = SubResource( 15 )
+text = "0"
+align = 1
+
+[node name="PointsReveal" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 93 )
+
+[node name="ColorRect2" type="ColorRect" parent="PointsReveal"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color( 0.478431, 0.803922, 0.952941, 1 )
+
+[node name="PokemonSprite" type="Sprite" parent="PointsReveal"]
+position = Vector2( 640, 320 )
+scale = Vector2( 3, 3 )
+texture = ExtResource( 92 )
+
+[node name="Pokeball" type="Sprite" parent="PointsReveal"]
+position = Vector2( 620, 320 )
+scale = Vector2( 3, 3 )
+texture = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="PointsReveal/Pokeball"]
+anims/RESET = SubResource( 5 )
+anims/shake = SubResource( 6 )
+
+[node name="PointsRevealButton" type="Button" parent="PointsReveal"]
+margin_left = 572.0
+margin_top = 656.0
+margin_right = 668.0
+margin_bottom = 698.0
+text = "Reveal"
+
+[node name="ReturnButton" type="Button" parent="PointsReveal"]
+visible = false
+margin_left = 572.0
+margin_top = 656.0
+margin_right = 668.0
+margin_bottom = 698.0
+text = "Return"
+
+[node name="PokemonName" type="Label" parent="PointsReveal"]
+visible = false
+margin_left = 3.0
+margin_top = 102.0
+margin_right = 1284.0
+margin_bottom = 180.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 7 )
+text = "Pokemon Name"
+align = 1
+valign = 1
+
+[node name="Points" type="Label" parent="PointsReveal"]
+visible = false
+margin_left = -1.0
+margin_top = 404.0
+margin_right = 1275.0
+margin_bottom = 615.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "100
+"
+align = 1
+valign = 1
+
+[node name="QuestionScreen" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="ColorRect" type="ColorRect" parent="QuestionScreen"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color( 0.478431, 0.803922, 0.952941, 1 )
+
+[node name="Question" type="NinePatchRect" parent="QuestionScreen"]
+margin_left = 127.0
+margin_top = 39.0
+margin_right = 1173.0
+margin_bottom = 126.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 5 )
+region_rect = Rect2( 0, 0, 128, 48 )
+patch_margin_left = 8
+patch_margin_top = 7
+patch_margin_right = 5
+patch_margin_bottom = 7
+
+[node name="QuestionContainer" type="CenterContainer" parent="QuestionScreen/Question"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Label" type="Label" parent="QuestionScreen/Question/QuestionContainer"]
+margin_left = 321.0
+margin_top = 22.0
+margin_right = 725.0
+margin_bottom = 65.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 0.996078, 0.996078, 0.996078, 1 )
+custom_colors/font_color_shadow = Color( 0.854902, 0.847059, 0.847059, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Here is a question!"
+
+[node name="Image" type="NinePatchRect" parent="QuestionScreen"]
+margin_left = 127.0
+margin_top = 133.0
+margin_right = 1173.0
+margin_bottom = 595.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 65 )
+region_rect = Rect2( 0, 0, 128, 48 )
+patch_margin_left = 8
+patch_margin_top = 7
+patch_margin_right = 5
+patch_margin_bottom = 7
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="QuestionContainer" type="CenterContainer" parent="QuestionScreen/Image"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="TextureRect" type="TextureRect" parent="QuestionScreen/Image/QuestionContainer"]
+margin_left = 459.0
+margin_top = 167.0
+margin_right = 587.0
+margin_bottom = 295.0
+texture = ExtResource( 2 )
+
+[node name="Answer" type="NinePatchRect" parent="QuestionScreen"]
+margin_left = 127.0
+margin_top = 605.0
+margin_right = 1173.0
+margin_bottom = 692.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 5 )
+region_rect = Rect2( 0, 0, 128, 48 )
+patch_margin_left = 7
+patch_margin_top = 7
+patch_margin_right = 6
+patch_margin_bottom = 6
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="QuestionContainer" type="CenterContainer" parent="QuestionScreen/Answer"]
+margin_left = -36.0
+margin_top = -14.0
+margin_right = 1069.0
+margin_bottom = 87.0
+
+[node name="Label" type="Label" parent="QuestionScreen/Answer/QuestionContainer"]
+margin_left = 361.0
+margin_top = 29.0
+margin_right = 744.0
+margin_bottom = 72.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.764706, 0.764706, 0.764706, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "Here is a Answer!"
+
+[node name="WrongButton" type="Button" parent="QuestionScreen"]
+anchor_right = 0.092
+anchor_bottom = 0.187
+margin_left = 148.0
+margin_top = 615.0
+margin_right = 166.24
+margin_bottom = 543.36
+text = "Wrong"
+
+[node name="CorrectButton" type="Button" parent="QuestionScreen"]
+anchor_right = 0.092
+anchor_bottom = 0.187
+margin_left = 1025.0
+margin_top = 617.0
+margin_right = 1031.24
+margin_bottom = 540.36
+text = "Right"
+
+[node name="TimerBar" type="ProgressBar" parent="QuestionScreen"]
+margin_left = 157.0
+margin_top = 141.0
+margin_right = 1130.0
+margin_bottom = 173.0
+custom_styles/fg = SubResource( 10 )
+max_value = 30.0
+value = 20.0
+percent_visible = false
+script = ExtResource( 103 )
+
+[node name="Timer" type="Timer" parent="QuestionScreen/TimerBar"]
+wait_time = 30.0
+one_shot = true
+autostart = true
+
+[node name="SetUpScreen" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 10 )
+
+[node name="ColorRect" type="ColorRect" parent="SetUpScreen"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.956863, 0.976471, 0.890196, 1 )
+
+[node name="Sprite" type="Sprite" parent="SetUpScreen"]
+position = Vector2( 661, 276 )
+scale = Vector2( 0.79028, 0.79028 )
+texture = ExtResource( 102 )
+
+[node name="BookList" type="OptionButton" parent="SetUpScreen"]
+margin_left = 170.0
+margin_top = 580.0
+margin_right = 616.0
+margin_bottom = 620.0
+text = "Book"
+
+[node name="ChapterList" type="OptionButton" parent="SetUpScreen"]
+margin_left = 704.0
+margin_top = 580.0
+margin_right = 1150.0
+margin_bottom = 620.0
+text = "Chapters"
+
+[node name="StartButton" type="Button" parent="SetUpScreen"]
+margin_left = 619.0
+margin_top = 656.0
+margin_right = 714.0
+margin_bottom = 676.0
+text = "Create Game"
+
+[node name="ThreeBallsScreen" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 98 )
+
+[node name="ColorRect" type="ColorRect" parent="ThreeBallsScreen"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0.101961, 0.14902, 1 )
+
+[node name="Choice1" type="TextureButton" parent="ThreeBallsScreen"]
+self_modulate = Color( 1, 0.952941, 0, 1 )
+margin_left = 220.0
+margin_top = 241.0
+margin_right = 348.0
+margin_bottom = 369.0
+texture_normal = ExtResource( 2 )
+
+[node name="Polygon2D" type="Polygon2D" parent="ThreeBallsScreen/Choice1"]
+modulate = Color( 1, 0.988235, 0, 0.188235 )
+position = Vector2( -233, -260.03 )
+scale = Vector2( 1.18182, 1.03934 )
+polygon = PoolVector2Array( 121, 77, 217, 382, 418, 382 )
+
+[node name="Choice2" type="TextureButton" parent="ThreeBallsScreen"]
+self_modulate = Color( 1, 0, 0, 1 )
+margin_left = 975.0
+margin_top = 230.0
+margin_right = 1103.0
+margin_bottom = 358.0
+texture_normal = ExtResource( 2 )
+
+[node name="Polygon2D2" type="Polygon2D" parent="ThreeBallsScreen/Choice2"]
+modulate = Color( 1, 0.988235, 0, 0.188235 )
+position = Vector2( -608, -249.029 )
+scale = Vector2( 1.18182, 1.03934 )
+polygon = PoolVector2Array( 121, 77, 217, 382, 418, 382 )
+
+[node name="Choice3" type="TextureButton" parent="ThreeBallsScreen"]
+self_modulate = Color( 0.776471, 0, 1, 1 )
+margin_left = 604.0
+margin_top = 227.0
+margin_right = 732.0
+margin_bottom = 355.0
+texture_normal = ExtResource( 2 )
+
+[node name="Polygon2D3" type="Polygon2D" parent="ThreeBallsScreen/Choice3"]
+modulate = Color( 1, 0.988235, 0, 0.188235 )
+position = Vector2( 136, -246.029 )
+scale = Vector2( 1.18182, 1.03934 )
+polygon = PoolVector2Array( 121, 77, 217, 382, 418, 382 )
+
+[node name="Mewtwo" type="Label" parent="ThreeBallsScreen"]
+visible = false
+margin_right = 1277.0
+margin_bottom = 249.0
+custom_colors/font_outline_modulate = Color( 0.513726, 0.513726, 0.513726, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 9 )
+text = "Trade points with another team."
+align = 1
+valign = 1
+
+[node name="Sprite" type="Sprite" parent="ThreeBallsScreen/Mewtwo"]
+position = Vector2( 619, 445 )
+scale = Vector2( 0.270312, 0.270312 )
+texture = ExtResource( 100 )
+
+[node name="TrainerBattle" type="Label" parent="ThreeBallsScreen"]
+visible = false
+margin_right = 1277.0
+margin_bottom = 249.0
+custom_colors/font_outline_modulate = Color( 0.513726, 0.513726, 0.513726, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 9 )
+text = "Play rock, scissor, paper with
+another team. The winner gets
+10 points."
+align = 1
+valign = 1
+
+[node name="Sprite2" type="Sprite" parent="ThreeBallsScreen/TrainerBattle"]
+position = Vector2( 665, 450 )
+scale = Vector2( 2.55556, 2.55556 )
+texture = ExtResource( 101 )
+
+[node name="TeamPlasma" type="Label" parent="ThreeBallsScreen"]
+visible = false
+margin_right = 1277.0
+margin_bottom = 249.0
+custom_colors/font_outline_modulate = Color( 0.513726, 0.513726, 0.513726, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 9 )
+text = "You have found Team Plasma.
+Lose all your points."
+align = 1
+valign = 1
+
+[node name="Sprite" type="Sprite" parent="ThreeBallsScreen/TeamPlasma"]
+position = Vector2( 665, 450 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 105 )
+
+[node name="ThreeBallsReturnButton" type="Button" parent="ThreeBallsScreen"]
+margin_left = 1162.0
+margin_top = 656.0
+margin_right = 1258.0
+margin_bottom = 698.0
+text = "Return"
+
+[node name="TestResources" type="Node" parent="."]
+script = ExtResource( 11 )
+test1_1 = ExtResource( 9 )
+test1_2 = ExtResource( 61 )
+test1_3 = ExtResource( 56 )
+test1_4 = ExtResource( 63 )
+test1_5 = ExtResource( 64 )
+test1_6 = ExtResource( 59 )
+test1_7 = ExtResource( 46 )
+test1_8 = ExtResource( 62 )
+test1_9 = ExtResource( 51 )
+test2_1 = ExtResource( 52 )
+test2_2 = ExtResource( 53 )
+test2_3 = ExtResource( 40 )
+test2_4 = ExtResource( 17 )
+test2_5 = ExtResource( 12 )
+test2_6 = ExtResource( 14 )
+test2_7 = ExtResource( 16 )
+test2_8 = ExtResource( 15 )
+test2_9 = ExtResource( 13 )
+test3_1 = ExtResource( 37 )
+test3_2 = ExtResource( 38 )
+test3_3 = ExtResource( 41 )
+test3_4 = ExtResource( 39 )
+test3_5 = ExtResource( 42 )
+test3_6 = ExtResource( 45 )
+test3_7 = ExtResource( 43 )
+test3_8 = ExtResource( 44 )
+test3_9 = ExtResource( 18 )
+test4_1 = ExtResource( 20 )
+test4_2 = ExtResource( 28 )
+test4_3 = ExtResource( 36 )
+test4_4 = ExtResource( 23 )
+test4_5 = ExtResource( 27 )
+test4_6 = ExtResource( 21 )
+test4_7 = ExtResource( 32 )
+test4_8 = ExtResource( 24 )
+test4_9 = ExtResource( 25 )
+test5_1 = ExtResource( 33 )
+test5_2 = ExtResource( 22 )
+test5_3 = ExtResource( 31 )
+test5_4 = ExtResource( 26 )
+test5_5 = ExtResource( 34 )
+test5_6 = ExtResource( 29 )
+test5_7 = ExtResource( 30 )
+test5_8 = ExtResource( 19 )
+test5_9 = ExtResource( 35 )
+test6_1 = ExtResource( 60 )
+test6_2 = ExtResource( 55 )
+test6_3 = ExtResource( 47 )
+test6_4 = ExtResource( 48 )
+test6_5 = ExtResource( 54 )
+test6_6 = ExtResource( 50 )
+test6_7 = ExtResource( 57 )
+test6_8 = ExtResource( 58 )
+test6_9 = ExtResource( 49 )
+
+[node name="PokemonManager" type="Node" parent="."]
+script = ExtResource( 91 )
+absol = ExtResource( 67 )
+ampharos = ExtResource( 87 )
+arcanine = ExtResource( 70 )
+blastoise = ExtResource( 75 )
+blaziken = ExtResource( 68 )
+bulbasaur = ExtResource( 81 )
+charzard = ExtResource( 79 )
+dragonite = ExtResource( 77 )
+eevee = ExtResource( 72 )
+flygon = ExtResource( 85 )
+garchomp = ExtResource( 74 )
+gardevoir = ExtResource( 73 )
+gengar = ExtResource( 80 )
+infernape = ExtResource( 82 )
+lacario = ExtResource( 66 )
+luxray = ExtResource( 84 )
+mudkip = ExtResource( 78 )
+ninetales = ExtResource( 69 )
+scizor = ExtResource( 83 )
+snorlax = ExtResource( 89 )
+squirtle = ExtResource( 76 )
+torterra = ExtResource( 86 )
+typhlosion = ExtResource( 88 )
+tyranitar = ExtResource( 90 )
+umbreon = ExtResource( 71 )
+
+[node name="MarioManager" type="Node" parent="."]
+script = ExtResource( 104 )
+
+[node name="Sounds" type="Node" parent="."]
+
+[node name="VictoryMusic" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource( 94 )
+volume_db = -10.0
+
+[node name="BattleMusic" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource( 97 )
+volume_db = -10.0
+
+[node name="SelectMusic" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource( 95 )
+volume_db = -10.0
+autoplay = true
+
+[node name="PokemonCry" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource( 96 )
+volume_db = -10.0
+
+[connection signal="pressed" from="Points/HBoxContainer/Team1/HBoxContainer/Team1Points" to="." method="_on_Team1Points_pressed"]
+[connection signal="pressed" from="Points/HBoxContainer/Team1/HBoxContainer/Team1PointsMinus" to="." method="_on_Team1PointsMinus_pressed"]
+[connection signal="pressed" from="Points/HBoxContainer/Team2/HBoxContainer/Team2Points" to="." method="_on_Team2Points_pressed"]
+[connection signal="pressed" from="Points/HBoxContainer/Team2/HBoxContainer/Team2Points2Minus" to="." method="_on_Team2Points2Minus_pressed"]
+[connection signal="pressed" from="Points/HBoxContainer/Team3/HBoxContainer/Team3Points" to="." method="_on_Team3Points_pressed"]
+[connection signal="pressed" from="Points/HBoxContainer/Team3/HBoxContainer/Team3PointsMinus" to="." method="_on_Team3PointsMinus_pressed"]
+[connection signal="pressed" from="PointsReveal/PointsRevealButton" to="." method="_on_PointsRevealButton_pressed"]
+[connection signal="pressed" from="PointsReveal/ReturnButton" to="." method="_on_ReturnButton_pressed"]
+[connection signal="pressed" from="QuestionScreen/WrongButton" to="." method="_on_WrongButton_pressed"]
+[connection signal="pressed" from="QuestionScreen/CorrectButton" to="." method="_on_CorrectButton_pressed"]
+[connection signal="timeout" from="QuestionScreen/TimerBar/Timer" to="." method="_on_Timer_timeout"]
+[connection signal="pressed" from="ThreeBallsScreen/Choice1" to="." method="_on_choose_option_pressed"]
+[connection signal="pressed" from="ThreeBallsScreen/Choice2" to="." method="_on_choose_option_pressed"]
+[connection signal="pressed" from="ThreeBallsScreen/Choice3" to="." method="_on_choose_option_pressed"]
+[connection signal="pressed" from="ThreeBallsScreen/ThreeBallsReturnButton" to="." method="_on_ThreeBallsReturnButton_pressed"]

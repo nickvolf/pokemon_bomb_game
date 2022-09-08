@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/questions/question.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/questions/book3/chapter5/images/speakn.png" type="Texture" id=2]
+
+[resource]
+script = ExtResource( 1 )
+question = "Say the opposite."
+answer = "My grandma spoke Korean."
+points = 3
+image_hint = ExtResource( 2 )

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/questions/question.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/questions/book3/chapter5/images/fishedriver.png" type="Texture" id=2]
+
+[resource]
+script = ExtResource( 1 )
+question = "Complete the sentence."
+answer = "fished"
+points = 3
+image_hint = ExtResource( 2 )

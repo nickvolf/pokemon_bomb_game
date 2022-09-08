@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/caterpie.mp3-6c66db294eb9e39b8582e555f77e10aa.mp3str"
+
+[deps]
+
+source_file="res://sounds/caterpie.mp3"
+dest_files=[ "res://.import/caterpie.mp3-6c66db294eb9e39b8582e555f77e10aa.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

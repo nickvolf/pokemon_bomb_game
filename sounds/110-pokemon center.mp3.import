@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/110-pokemon center.mp3-050ec04659f3f8b0db6ece6ed7470895.mp3str"
+
+[deps]
+
+source_file="res://sounds/110-pokemon center.mp3"
+dest_files=[ "res://.import/110-pokemon center.mp3-050ec04659f3f8b0db6ece6ed7470895.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

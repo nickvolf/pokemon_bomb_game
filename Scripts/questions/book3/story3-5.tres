@@ -1,0 +1,60 @@
+[gd_resource type="Resource" load_steps=28 format=2]
+
+[ext_resource path="res://Scripts/questions/book_quiz.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/questions/book3/chapter5/1.tres" type="Resource" id=2]
+[ext_resource path="res://Scripts/questions/book3/chapter5/3.tres" type="Resource" id=3]
+[ext_resource path="res://Scripts/questions/book3/chapter5/4.tres" type="Resource" id=4]
+[ext_resource path="res://Scripts/questions/book3/chapter5/5.tres" type="Resource" id=5]
+[ext_resource path="res://Scripts/questions/book3/chapter5/2.tres" type="Resource" id=6]
+[ext_resource path="res://Scripts/questions/book3/chapter5/13.tres" type="Resource" id=7]
+[ext_resource path="res://Scripts/questions/book3/chapter5/23.tres" type="Resource" id=8]
+[ext_resource path="res://Scripts/questions/book3/chapter5/8.tres" type="Resource" id=9]
+[ext_resource path="res://Scripts/questions/book3/chapter5/11.tres" type="Resource" id=10]
+[ext_resource path="res://Scripts/questions/book3/chapter5/19.tres" type="Resource" id=11]
+[ext_resource path="res://Scripts/questions/book3/chapter5/24.tres" type="Resource" id=12]
+[ext_resource path="res://Scripts/questions/book3/chapter5/14.tres" type="Resource" id=13]
+[ext_resource path="res://Scripts/questions/book3/chapter5/15.tres" type="Resource" id=14]
+[ext_resource path="res://Scripts/questions/book3/chapter5/17.tres" type="Resource" id=15]
+[ext_resource path="res://Scripts/questions/book3/chapter5/7.tres" type="Resource" id=16]
+[ext_resource path="res://Scripts/questions/book3/chapter5/6.tres" type="Resource" id=17]
+[ext_resource path="res://Scripts/questions/book3/chapter5/12.tres" type="Resource" id=18]
+[ext_resource path="res://Scripts/questions/book3/chapter5/9.tres" type="Resource" id=19]
+[ext_resource path="res://Scripts/questions/book3/chapter5/10.tres" type="Resource" id=20]
+[ext_resource path="res://Scripts/questions/book3/chapter5/16.tres" type="Resource" id=21]
+[ext_resource path="res://Scripts/questions/book3/chapter5/18.tres" type="Resource" id=22]
+[ext_resource path="res://Scripts/questions/book3/chapter5/21.tres" type="Resource" id=23]
+[ext_resource path="res://Scripts/questions/book3/chapter5/20.tres" type="Resource" id=24]
+[ext_resource path="res://Scripts/questions/book3/chapter5/22.tres" type="Resource" id=25]
+[ext_resource path="res://Scripts/questions/book3/chapter5/26.tres" type="Resource" id=26]
+[ext_resource path="res://Scripts/questions/book3/chapter5/25.tres" type="Resource" id=27]
+
+[resource]
+script = ExtResource( 1 )
+book = "Story Central 3"
+chapter = 5
+question1 = ExtResource( 2 )
+question2 = ExtResource( 6 )
+question3 = ExtResource( 3 )
+question4 = ExtResource( 4 )
+question5 = ExtResource( 5 )
+question6 = ExtResource( 17 )
+question7 = ExtResource( 16 )
+question8 = ExtResource( 9 )
+question9 = ExtResource( 19 )
+question10 = ExtResource( 20 )
+question11 = ExtResource( 10 )
+question12 = ExtResource( 18 )
+question13 = ExtResource( 7 )
+question14 = ExtResource( 13 )
+question15 = ExtResource( 14 )
+question16 = ExtResource( 21 )
+question17 = ExtResource( 15 )
+question18 = ExtResource( 22 )
+question19 = ExtResource( 11 )
+question20 = ExtResource( 24 )
+question21 = ExtResource( 23 )
+question22 = ExtResource( 25 )
+question23 = ExtResource( 8 )
+question24 = ExtResource( 12 )
+question25 = ExtResource( 27 )
+question26 = ExtResource( 26 )
