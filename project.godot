@@ -1,0 +1,85 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "HBoxContainer",
+"class": "ContributorClass",
+"language": "GDScript",
+"path": "res://addons/github-integration/scripts/ContributorClass.gd"
+}, {
+"base": "Resource",
+"class": "Custom_Theme",
+"language": "GDScript",
+"path": "res://Scripts/themeResource.gd"
+}, {
+"base": "PanelContainer",
+"class": "GistItem",
+"language": "GDScript",
+"path": "res://addons/github-integration/scripts/GistItem.gd"
+}, {
+"base": "HBoxContainer",
+"class": "InvitationItem",
+"language": "GDScript",
+"path": "res://addons/github-integration/scripts/InvitationItem.gd"
+}, {
+"base": "Resource",
+"class": "Pokemon",
+"language": "GDScript",
+"path": "res://Scripts/pokemon/pokemon.gd"
+}, {
+"base": "Resource",
+"class": "Question",
+"language": "GDScript",
+"path": "res://Scripts/questions/question.gd"
+}, {
+"base": "PanelContainer",
+"class": "RepositoryItem",
+"language": "GDScript",
+"path": "res://addons/github-integration/scripts/RepositoryItem.gd"
+}, {
+"base": "Resource",
+"class": "book_quiz",
+"language": "GDScript",
+"path": "res://Scripts/questions/book_quiz.gd"
+} ]
+_global_script_class_icons={
+"ContributorClass": "",
+"Custom_Theme": "",
+"GistItem": "",
+"InvitationItem": "",
+"Pokemon": "",
+"Question": "",
+"RepositoryItem": "",
+"book_quiz": ""
+}
+
+[application]
+
+config/name="Bomb Game"
+run/main_scene="res://Main.tscn"
+config/icon="res://icon.png"
+
+[display]
+
+window/size/width=1280
+window/size/height=720
+window/stretch/mode="2d"
+
+[gui]
+
+common/drop_mouse_on_gui_input_disabled=true
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
